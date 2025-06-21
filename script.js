@@ -6,6 +6,15 @@ function scrollToSection(id) {
   }
 
 
+  function downloadCV() {
+    const link = document.createElement('a');
+    link.href = 'files/Wacera_CV.pdf';
+    link.download = 'Wacera_CV.pdf';
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
+  }
+  
   function openImageModal(src) {
     const modal = document.getElementById("imageModal");
     const modalImg = document.getElementById("modalImage");
@@ -15,16 +24,5 @@ function scrollToSection(id) {
   
   function closeImageModal() {
     document.getElementById("imageModal").style.display = "none";
-  }
-  
-  
-
-  function downloadCV() {
-    const link = document.createElement('a');
-    link.href = 'files/Wacera_CV.pdf';
-    link.download = 'Wacera_CV.pdf'; // name of the file when downloaded
-    document.body.appendChild(link);
-    link.click();
-    document.body.removeChild(link);
   }
   
