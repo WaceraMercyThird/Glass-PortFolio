@@ -5,14 +5,21 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Wacera | Portfolio</title>
   <link rel="stylesheet" href="style.css" />
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"> -->
+
 </head>
 <body>
   <header class="hero">
     <div class="glass-card intro">
-      <img src="assets/pexels-jmark-250591.jpg" alt="Wacera Profile" class="profile-pic" />
-      <h1>Hello, I'm <span class="highlight">Wacera</span></h1>
-      <p>Software Developer & Cybersecurity Enthusiast</p>
+      <img src="assets/image.png" alt="Wacera Profile" class="profile-pic" />
+      <h1>Hello, I'm <span class="highlight">Mercy Wacera</span></h1>
+      <p><span class="role">Software Developer</span> • <span class="focus">Cybersecurity & AI Enthusiast</span></p>
       <button onclick="scrollToSection('projects')">View My Work</button>
+      <button onclick="scrollToSection('certificates')">Certificates</button>
+      <button onclick="scrollToSection('badges')">Badges</button>
+      <button class="download-btn" onclick="window.location.href='files/Mercy_Wacera_Resume.pdf'">Download CV</button>
+
+
     </div>
   </header>
 
@@ -21,52 +28,167 @@
     <p>I craft beautiful, secure, and scalable digital solutions. Passionate about tech, design, and empowering women in STEM.</p>
   </section>
 
+  <section id="skills" class="glass-section">
+    <h2>Skills</h2>
+    <div class="skills-grid">
+      <div class="glass-card skill-card">HTML5</div>
+      <div class="glass-card skill-card">CSS3</div>
+      <div class="glass-card skill-card">JavaScript</div>
+      <div class="glass-card skill-card">React</div>
+      <div class="glass-card skill-card">Angular</div>
+      <div class="glass-card skill-card">Node.js</div>
+      <div class="glass-card skill-card">Next.js</div>
+      <div class="glass-card skill-card">GO(golang)</div>
+      <div class="glass-card skill-card">.NET/C#</div>
+      <div class="glass-card skill-card">Python</div>
+      <div class="glass-card skill-card">PostgreSQL</div>
+      <div class="glass-card skill-card">MSSQL</div>
+      <div class="glass-card skill-card">Git, GitHub & Gilab</div>
+      <div class="glass-card skill-card">Docker</div>
+      <div class="glass-card skill-card">Communication</div>
+    </div>
+  </section>
+  
   <section id="projects" class="glass-section">
     <h2>Projects</h2>
     <div class="project-grid">
       <div class="glass-card">
-        <img src="assets/pexels-jmark-250591.jpg" alt="Project 1" />
-        <h3>E-commerce App</h3>
+        <a href="https://glassmorphism-form-5t7f86.netlify.app/" target="_blank">
+            <img src="assets/Plaza.png" alt="Project 1" />
+            <h3>Biashara Plaza Sign Up</h3>
+          </a>
       </div>
       <div class="glass-card">
-        <img src="assets/pexels-jmark-250591.jpg" alt="Project 2" />
-        <h3>Secure Wallet</h3>
+        <a href="https://akirachixcountdown.netlify.app/" target="_blank">
+            <img src="assets/AkiraChix.png" alt="Project 2" />
+            <h3>AkiraChix Countdown</h3>
+          </a>
       </div>
       <div class="glass-card">
-        <img src="assets/pexels-jmark-250591.jpg" alt="Project 3" />
-        <h3>Portfolio Website</h3>
+            <img src="assets/Jambopay_Wallet.png" alt="Project 3" onclick="openImageModal(this.src)" />
+            <h3>JamboPay_Wallet Report API Service</h3>
+          
       </div>
+      <div class="glass-card">
+        <a href="https://graceful-pie-cadb67.netlify.app/" target="_blank">
+            <img src="assets/Mimi_Boutique.png" alt="Project 4" />
+            <h3>E-Commerce Boutique</h3>
+          </a>
+      </div>
+      <div class="glass-card">
+        <a href="https://sweettastedish-9145327.netlify.app/" target="_blank">
+            <img src="assets/Dish.png" alt="Project 5" />
+            <h3>Restaurant Sweet Dish</h3>
+          </a>
+      </div>
+      <div class="glass-card">
+        <a href="https://mercy-wacera.netlify.app/" target="_blank">
+            <img src="assets/Mercy_Wacera_Portfolio.png" alt="Project 5" />
+            <h3>PortFolio</h3>
+          </a>
+      </div>
+      <div class="glass-card">
+        <a href="https://wondrous-froyo-93f012.netlify.app/" target="_blank">
+            <img src="assets/pet.png" alt="Project 6" />
+            <h3>Veterinary Clinic System</h3>
+          </a>
+      </div>
+   
     </div>
   </section>
   <section id="certificates" class="glass-section">
-    <h2>Certificates & Badges</h2>
-    <div class="badge-grid">
+    <h2>Certificates</h2>
+    <div class="certificate-grid">
+        <div class="glass-card">
+            <img src="assets/Mercy Wacera_OOP.jpg" alt="Certificate 1" onclick="openImageModal(this.src)" />
+            <h4>Object-Oriented Programming </h4>
+          </div>
+          <div class="glass-card">
+            <img src="assets/Programming_Hero_Certificate_java_fundamental.jpg" alt="Certificate 2" onclick="openImageModal(this.src)" />
+            <h4>Java_Fundamental</h4>
+          </div>
+          <div class="glass-card">
+            <img src="assets/Programming_Hero_Certificate_react_fundamental.jpg" alt="Certificate 3" onclick="openImageModal(this.src)" />
+            <h4>React_Fundamental</h4>
+          </div>
       <div class="glass-card">
-        <img src="images/certificate1.jpg" alt="Certificate 1" />
-        <h4>Cybersecurity Fundamentals</h4>
+        <img src="assets/Programming_Hero_Certificate_web_fundamental.jpg" alt="Certificate 4" onclick="openImageModal(this.src)" />
+        <h4>Web_Fundamental</h4>
       </div>
       <div class="glass-card">
-        <img src="images/certificate2.jpg" alt="Certificate 2" />
-        <h4>Advanced Web Development</h4>
+        <img src="assets/Programming_Hero_Certificate_blockchain_fundamental.jpg" alt="Certificate 5" onclick="openImageModal(this.src)" />
+        <h4>Blockchain_Fundamental</h4>
       </div>
       <div class="glass-card">
-        <img src="images/badge1.png" alt="Badge 1" />
-        <h4>GitHub Contributor</h4>
+        <img src="assets/Mercy Wacera_Cloud Computing.jpg" alt="Certificate 5" onclick="openImageModal(this.src)" />
+        <h4>Cloud Computing</h4>
       </div>
-      <div class="glass-card">
-        <img src="images/badge2.png" alt="Badge 2" />
-        <h4>Women in Tech</h4>
-      </div>
+    </section>
+
+    <!-- Badges Section -->
+    <section id="badges" class="glass-section">
+        <h2>Badges</h2>
+
+        <div class="badge-grid">
+            <div class="glass-card">
+                <img src="assets/1750371550267.jpg" alt="Badge 1" onclick="openImageModal(this.src)"/>
+                <h4>Web Dev Hero</h4>
+              </div>
+              <div class="glass-card">
+                <img src="assets/1750370503008.jpg" alt="Badge 2" onclick="openImageModal(this.src)" />
+                <h4>Blockchain ETH Gunner</h4>
+              </div>
+              <div class="glass-card">
+                <img src="assets/1750370503008.jpg" alt="Badge 3" onclick="openImageModal(this.src)" />
+                <h4>Blockchain ETH Gunner</h4>
+              </div>
+              <div class="glass-card">
+                <img src="assets/1750369980433.jpg" alt="Badge 4" onclick="openImageModal(this.src)" />
+                <h4>Blockchain Crypto beginner</h4>
+              </div>
+              <div class="glass-card">
+                <img src="assets/1750369712090.jpg" alt="Badge 5" onclick="openImageModal(this.src)" />
+                <h4>Blockchain Buster</h4>
+              </div>
+              <div class="glass-card">
+                <img src="assets/1750369512222.jpg" alt="Badge 6" onclick="openImageModal(this.src)" />
+                <h4>Blockchain Man/Woman</h4>
+              </div>
+              <div class="glass-card">
+                <img src="assets/1750366701335.jpg" alt="Badge 7" onclick="openImageModal(this.src)" />
+                <h4>Web Development</h4>
+              </div>
+              <div class="glass-card">
+                <img src="assets/1750290765075.jpg" alt="Badge 8" onclick="openImageModal(this.src)" />
+                <h4>Pro Java Ranger</h4>
+              </div>
+              <div class="glass-card">
+                <img src="assets/1750289194847.jpg" alt="Badge 9" onclick="openImageModal(this.src)" />
+                <h4>Java Progress</h4>
+              </div>
+
+
+        </div>
+
+      
     </div>
   </section>
   
   <section id="contact" class="glass-section">
     <h2>Contact Me</h2>
-    <p>Email: wacera@example.com</p>
-    <p>GitHub: github.com/wacera</p>
-    <p>LinkedIn: linkedin.com/in/wacera</p>
+    <p>Email: mwacera@gmail.com</p>
+    <p>GitHub: https://github.com/WaceraMercyThird</p>
+    <p>LinkedIn: https://www.linkedin.com/in/mercy-wacera-206671233/</p>
   </section>
 
+
+  <!-- Image Modal -->
+<div id="imageModal" class="modal" onclick="closeImageModal()">
+    <span class="close">&times;</span>
+    <img class="modal-content" id="modalImage" />
+  </div>
+
+  
   <script src="script.js"></script>
 </body>
 </html>
