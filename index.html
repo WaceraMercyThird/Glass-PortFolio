@@ -55,12 +55,9 @@
           <li><strong>Merchant Client Portal</strong> – A portal for business clients to manage operations securely</li>
         </ul>
       </div>
-
-      
-  
+ 
       <p>
-        My work combines technical skill, a deep understanding of secure systems, and a commitment to inclusive, innovative development.         Beyond code, I'm passionate about empowering women in STEM and creating inclusive tech communities. Whether it’s mentoring, or collaborating with mission-driven teams — I love using technology to uplift and inspire.
-
+        My work combines technical skill, a deep understanding of secure systems, and a commitment to inclusive, innovative development. Beyond code, I'm passionate about empowering women in STEM and creating inclusive tech communities. Whether it’s mentoring, or collaborating with mission-driven teams — I love using technology to uplift and inspire.
       </p>
 
       <p>
@@ -72,10 +69,6 @@
   </section>
   
   
-  
-  
-  
-
   <section id="skills" class="glass-section">
     <h2>Skills</h2>
     <div class="skills-grid">
@@ -291,30 +284,65 @@
    
     </div>
   </section>
+
+<!-- Hidden iframe to capture form response -->
+<iframe name="formResponse" id="formResponse" style="display:none;"></iframe>
+
+<section id="contact" class="glass-section">
+  <h2>Contact Me</h2>
+
+  <div class="form-card">
+    <form id="contactForm"
+      action="https://formspree.io/f/movwnzdw"
+          method="POST"
+          class="contact-form"
+          target="formResponse">
+
+      <input type="hidden" name="_captcha" value="false">
+      <input type="hidden" name="_template" value="box">
+      <input type="hidden" name="_subject" value="New message from portfolio site">
+
+      <div class="form-group">
+        <label for="name">Your Name</label>
+        <input type="text" id="name" name="name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Your Email</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div class="form-group">
+        <label for="message">Message</label>
+        <textarea id="message" name="message" rows="5" required></textarea>
+      </div>
+
+      <button type="submit">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- Toasts -->
+<div id="toast" class="toast">Message sent successfully!</div>
+<div id="toast-error" class="toast toast-error">Message failed to send!</div>
+
   
-  <section id="contact" class="glass-section">
-    <h2>Contact Me</h2>
   
-    <p>
-      <a href="mailto:mwacera@gmail.com?subject=Portfolio%20Inquiry&body=Hi%20Wacera,%0D%0A%0D%0AI%20would%20like%20to%20connect%20with%20you%20regarding..." target="_blank">
-        mwacera@gmail.com
+  
+  <section id="follow-up" class="glass-section follow-up">
+    <h3>Stay Connected</h3>
+    <p>Thank you for reaching out. I’ll get back to you as soon as possible. Meanwhile, feel free to follow me:</p>
+  
+    <div class="follow-icons">
+      <a href="https://github.com/WaceraMercyThird" target="_blank" title="GitHub">
+        <i class="fab fa-github"></i>
       </a>
-    </p>
-  
-    <p>
-      <a href="https://github.com/WaceraMercyThird" target="_blank">
-        github.com/WaceraMercyThird
+      <a href="https://www.linkedin.com/in/mercy-wacera-206671233/" target="_blank" title="LinkedIn">
+        <i class="fab fa-linkedin"></i>
       </a>
-    </p>
-  
-    <p>
-      <a href="https://www.linkedin.com/in/mercy-wacera-206671233/" target="_blank">
-        linkedin.com/in/mercy-wacera-206671233
-      </a>
-    </p>
+     
+    </div>
   </section>
-  
-  
   
   
   

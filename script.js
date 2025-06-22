@@ -22,7 +22,35 @@ function scrollToSection(id) {
     modalImg.src = src;
   }
   
-  function closeImageModal() {
-    document.getElementById("imageModal").style.display = "none";
-  }
+
+  const PortfolioApp = {
+    // Existing methods...
+  
+    showToast(id) {
+      const toast = document.getElementById(id);
+      if (toast) {
+        toast.style.display = "block";
+        setTimeout(() => {
+          toast.style.display = "none";
+        }, 4000);
+      }
+    }
+  };
+  
+  // Listen to iframe load to detect submit
+  document.getElementById('formResponse').addEventListener('load', function () {
+    const form = document.getElementById('contactForm');
+    const name = form.name.value;
+    const email = form.email.value;
+    const message = form.message.value;
+  
+    if (name === "" || email === "" || message === "") {
+      PortfolioApp.showToast("toast-error");
+    } else {
+      // clear the form
+      form.reset();
+      PortfolioApp.showToast("toast");
+    }
+  });
+  
   

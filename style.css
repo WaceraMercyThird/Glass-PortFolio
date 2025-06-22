@@ -309,20 +309,134 @@
     cursor: pointer;
   }
  
-  #contact p {
-    margin: 0.5rem 0;
+  
+  .contact-form {
+    max-width: 600px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.2rem;
+  }
+  .form-card {
+    max-width: 650px;
+    margin: 2rem auto;
+    padding: 2rem;
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 20px;
+    backdrop-filter: blur(10px);
+    box-shadow: 0 0 25px rgba(0, 255, 255, 0.1);
   }
   
-  #contact a {
-    color: #fff;
-    text-decoration: none;
-    font-size: 1rem;
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
   }
   
-  #contact a:hover {
+  .form-group label {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
     color: #00ffff;
-    text-decoration: underline;
   }
+  
+  input,
+  textarea {
+    padding: 0.8rem;
+    border-radius: 10px;
+    border: none;
+    background: rgba(255, 255, 255, 0.1);
+    color: #fff;
+    resize: none;
+  }
+  
+  input:focus,
+  textarea:focus {
+    outline: none;
+    background: rgba(255, 255, 255, 0.2);
+  }
+  
+  button[type="submit"] {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    background: #00ffff;
+    color: #000;
+    font-weight: bold;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background: #00cccc;
+  }
+  
+  .form-note {
+    text-align: center;
+    font-size: 0.9rem;
+    color: #aaa;
+    margin-top: 1rem;
+  }
+
+
+  .follow-up {
+    text-align: center;
+    margin-top: 2rem;
+  }
+  
+  .follow-up h3 {
+    font-size: 1.6rem;
+    color: #00ffff;
+    margin-bottom: 1rem;
+  }
+  
+  .follow-up p {
+    font-size: 1rem;
+    color: #fff;
+    margin-bottom: 1rem;
+  }
+  
+  .follow-icons {
+    display: flex;
+    justify-content: center;
+    gap: 1.5rem;
+  }
+  
+  .follow-icons a {
+    font-size: 1.5rem;
+    color: #00ffff;
+    transition: color 0.3s ease;
+  }
+  
+  .follow-icons a:hover {
+    color: #00cccc;
+  }
+
+  .toast {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: rgba(0, 255, 255, 0.9);
+    color: black;
+    padding: 1rem 2rem;
+    border-radius: 10px;
+    font-weight: bold;
+    display: none;
+    z-index: 9999;
+    animation: fadeInOut 4s ease-in-out;
+  }
+  .toast-error {
+    background: rgba(255, 0, 0, 0.85);
+    color: #fff;
+  }
+  
+  @keyframes fadeInOut {
+    0% { opacity: 0; transform: translateX(-50%) translateY(20px); }
+    10% { opacity: 1; transform: translateX(-50%) translateY(0); }
+    90% { opacity: 1; transform: translateX(-50%) translateY(0); }
+    100% { opacity: 0; transform: translateX(-50%) translateY(-20px); }
+  }
+  
   
   
   @media (max-width: 600px) {
