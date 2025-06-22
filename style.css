@@ -141,6 +141,32 @@
     margin-bottom: 1rem;
   }
 
+  .project-description {
+    font-size: 0.95rem;
+    margin-top: 0.5rem;
+    color: #ddd;
+  }
+  
+  .project-tech {
+    font-size: 0.85rem;
+    color: #aaa;
+    margin: 0.5rem 0;
+  }
+  
+  .project-link {
+    display: inline-block;
+    margin-top: 0.5rem;
+    color: #00ffff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+  
+  .project-link:hover {
+    text-decoration: underline;
+    color: #00cccc;
+  }
+  
+
   .glass-card a {
     text-decoration: none;
     color: inherit;
@@ -159,6 +185,13 @@
     justify-content: center;
     margin-top: 2rem;
   }
+  
+  .certificate-desc {
+    font-size: 0.85rem;
+    color: #ccc;
+    margin-top: 0.5rem;
+  }
+  
   .certificate-grid .glass-card {
     width: 220px;
     padding: 1rem;
@@ -177,6 +210,13 @@
     justify-content: center;
     margin-top: 2rem;
   }
+  
+  .badge-desc {
+    font-size: 0.85rem;
+    color: #ccc;
+    margin-top: 0.5rem;
+  }
+  
   .badge-grid .glass-card {
     width: 220px;
     padding: 1rem;
@@ -221,6 +261,22 @@
     font-weight: bold;
     cursor: pointer;
   }
+ 
+  #contact p {
+    margin: 0.5rem 0;
+  }
+  
+  #contact a {
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+  }
+  
+  #contact a:hover {
+    color: #00ffff;
+    text-decoration: underline;
+  }
+  
   
   @media (max-width: 600px) {
     .project-grid {
@@ -228,4 +284,16 @@
       align-items: center;
     }
   }
+
+  @media (max-width: 480px) {
+    .glass-section {
+      margin: 1rem;
+      padding: 1.5rem 1rem;
+    }
+  
+    .glass-card {
+      width: 100%;
+    }
+  }
+  
   
