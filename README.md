@@ -1,8 +1,8 @@
-# 💼 Mercy Wacera – Developer Portfolio
+# 💼Portfolio
 
 ![Hero Banner](./assets/portfolio-screenshot-hero.png)
 
-A futuristic **Elegant translucent interface portfolio website** showcasing my projects, skills, badges, certifications, and professional journey as a Software Developer with interests in learning Cybersecurity, AI, and Cloud Computing.
+A futuristic **Elegant translucent interface portfolio website** showcasing my projects, skills, badges, certifications, and professional journey as a Software Developer with interests in learning Cybersecurity and AI.
 
 ---
 
