@@ -2,13 +2,13 @@
 
 ![Hero Banner](./assets/portfolio-screenshot-hero.png)
 
-A futuristic **glassmorphic portfolio website** showcasing my projects, skills, badges, certifications, and professional journey as a Software Developer with interests in Cybersecurity, AI, and Cloud Computing.
+A futuristic **Elegant translucent interface portfolio website** showcasing my projects, skills, badges, certifications, and professional journey as a Software Developer with interests in learning Cybersecurity, AI, and Cloud Computing.
 
 ---
 
 ## 🚀 Features
 
-- 🔮 Glassmorphic modern UI
+- 🔮 Elegant translucent interface
 - 🧠 Project sections with full-size preview
 - 🏆 Certification and Badge gallery
 - 📄 Downloadable CV
@@ -21,56 +21,20 @@ A futuristic **glassmorphic portfolio website** showcasing my projects, skills, 
 ## 🛠️ Technologies Used
 
 - **HTML5**
-- **CSS3** (Glassmorphism + Flexbox/Grid)
+- **CSS3** (Flexbox/Grid)
 - **JavaScript**
 - **Devicon & Font Awesome** for logos/icons
 - **FormSubmit** for contact email form
 
 ---
 
-## 📷 Preview
-
-### 🔹 Skills Section
-![Skills Preview](./assets/readme-skills-preview.png)
-
-### 🔹 Certificates Gallery
-![Certificates Preview](./assets/readme-certificates-preview.png)
-
-### 🔹 Projects Section
-![Projects Preview](./assets/readme-projects-preview.png)
-
----
 
 ## 📄 Live Preview
 
 🔗 [Visit Live Portfolio](https://your-portfolio-link.com)
 
-> You can also download the full project and open `index.html` in your browser.
-
 ---
 
-## 📥 Download CV
-
-My CV is included in the `/files/` directory and can be downloaded from the portfolio or directly:
-[Wacera_CV.pdf](./files/Wacera_CV.pdf)
-
----
-
-## 📫 Contact
-
-Feel free to reach out:
-
-- ✉️ Email: [mwacera@gmail.com](mailto:mwacera@gmail.com)
-- 🧑‍💻 GitHub: [WaceraMercyThird](https://github.com/WaceraMercyThird)
-- 🔗 LinkedIn: [Mercy Wacera](https://www.linkedin.com/in/mercy-wacera-206671233/)
-
----
-
-## 📌 License
-
-This project is open-source and free to use for learning and inspiration. Attribution appreciated.
-
----
 
 ## 🙏 Acknowledgements
 
