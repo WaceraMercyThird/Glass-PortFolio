@@ -1,13 +1,6 @@
-# 💼 Mercy Wacera – Glassmorphic Portfolio
+# 💼 Mercy Wacera – Developer Portfolio
 
 ![Portfolio Screenshot](https://raw.githubusercontent.com/WaceraMercyThird/Glass-PortFolio/main/assets/portfolio-screenshot-hero.png)
-
-A sleek and modern personal portfolio website using glassmorphism. Built to showcase skills, projects, badges, certifications, and contact details in a clean, responsive UI.
-
-...
-
-
-# 💼 Mercy Wacera – Developer Portfolio
 
 A futuristic **glassmorphic portfolio website** showcasing my projects, skills, badges, certifications, and professional journey as a 
 A futuristic **glassmorphic portfolio website** showcasing my projects, skills, badges, certifications, and professional journey as a Software Developer with interests in Cybersecurity, AI, and Cloud Computing.
