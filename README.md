@@ -1,8 +1,7 @@
 # 💼 Mercy Wacera – Developer Portfolio
 
-![Portfolio Screenshot](https://raw.githubusercontent.com/WaceraMercyThird/Glass-PortFolio/main/assets/portfolio-screenshot-hero.png)
+![Hero Banner](./assets/portfolio-screenshot-hero.png)
 
-A futuristic **glassmorphic portfolio website** showcasing my projects, skills, badges, certifications, and professional journey as a 
 A futuristic **glassmorphic portfolio website** showcasing my projects, skills, badges, certifications, and professional journey as a Software Developer with interests in Cybersecurity, AI, and Cloud Computing.
 
 ---
