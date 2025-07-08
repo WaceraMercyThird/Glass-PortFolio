@@ -21,6 +21,10 @@ function scrollToSection(id) {
     modal.style.display = "flex";
     modalImg.src = src;
   }
+  function closeImageModal() {
+    const modal = document.getElementById("imageModal");
+    modal.style.display = "none";
+  }
   
 
   const PortfolioApp = {

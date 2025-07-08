@@ -191,59 +191,7 @@
     background: rgba(0, 255, 255, 0.2);
   }
   
-  .project-grid {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 1.5rem;
-    justify-content: center;
-    margin-top: 2rem;
-  }
-  .project-grid .glass-card {
-    width: 220px;
-    padding: 1rem;
-  }
-  .project-grid img {
-    width: 100%;
-    border-radius: 8px;
-    margin-bottom: 1rem;
-  }
-
-  .project-description {
-    font-size: 0.95rem;
-    margin-top: 0.5rem;
-    color: #ddd;
-  }
   
-  .project-tech {
-    font-size: 0.85rem;
-    color: #aaa;
-    margin: 0.5rem 0;
-  }
-  
-  .project-link {
-    display: inline-block;
-    margin-top: 0.5rem;
-    color: #00ffff;
-    text-decoration: none;
-    font-weight: bold;
-  }
-  
-  .project-link:hover {
-    text-decoration: underline;
-    color: #00cccc;
-  }
-  
-
-  .glass-card a {
-    text-decoration: none;
-    color: inherit;
-  }
-  .glass-card:hover h3 {
-    color: #00ffff;
-  }
-  .glass-card a:hover h3 {
-    color: #00ffff;
-  }
   
   .certificate-grid {
     display: flex;
@@ -295,7 +243,127 @@
     object-fit: cover;
   }
   
+  /* ..................PROJECTS.............. */
+  .project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
+    gap: 2rem;
+    margin-top: 2.5rem;
+  }
+  
+  .project-grid .glass-card {
+    padding: 1.5rem;
+    border-radius: 16px;
+    background: rgba(255, 255, 255, 0.05);
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(12px);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    text-align: center;
+  }
+  
+  .project-grid .glass-card:hover {
+    transform: translateY(-5px) scale(1.02);
+    /* box-shadow: 0 8px 24px rgba(0, 255, 255, 0.15); */
+  }
+  
+  .project-grid img {
+    width: 100%;
+    border-radius: 12px;
+    margin-bottom: 1rem;
+    box-shadow: 0 0 12px rgba(255, 255, 255, 0.03);
+    transition: transform 0.3s ease;
+  }
+  
+  .project-grid img:hover {
+    transform: scale(1.03);
+  }
+  
+  .project-grid h3 {
+    font-size: 1.15rem;
+    margin: 0.5rem 0;
+    color: #fff;
+    font-weight: 600;
+  }
+  
+  .project-description {
+    font-size: 0.95rem;
+    color: #ccc;
+    margin-top: 0.5rem;
+    line-height: 1.5;
+  }
+  
+  .project-tech {
+    font-size: 0.85rem;
+    color: #00ffffb3;
+    margin: 0.5rem 0 0.3rem;
+    font-style: italic;
+  }
+  
+  .glass-card .project-link {
+    display: inline-block;
+    margin-top: 0.7rem;
+    color: #ff8c42;
+    text-decoration: none;
+    font-weight: bold;
+    /* transition: color 0.1s ease; */
+  }
+  
+  .project-link:hover {
+    text-decoration: underline;
+  }
+   
 
+  .glass-card a {
+    text-decoration: none;
+    color: inherit;
+  }
+  .glass-card:hover h3 {
+    color: #00ffff;
+  }
+  .glass-card a:hover h3 {
+    color: #00ffff;
+  }
+/* ...............FOLLOW UP LOGO................ */
+.follow-logo {
+  margin-top: 1.5rem;
+  text-align: center;
+}
+
+.follow-logo img {
+  max-width: 120px;
+  opacity: 0.8;
+  transition: opacity 0.3s ease, transform 0.3s ease;
+}
+
+.follow-logo img:hover {
+  opacity: 1;
+  transform: scale(1.05);
+}
+
+  
+  /* ...........MODEL........... */
+  .image-modal {
+    display: none;
+    position: fixed;
+    z-index: 9999;
+    padding-top: 60px;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.9);
+  }
+  
+  .modal-content {
+    margin: auto;
+    display: block;
+    max-width: 90%;
+    max-height: 80vh;
+    border-radius: 8px;
+  }
+   
+  
   .modal {
     display: none;
     position: fixed;
@@ -310,26 +378,40 @@
     align-items: center;
   }
   
-  .modal-content {
-    margin: auto;
-    display: block;
-    max-width: 90%;
-    max-height: 80%;
-    border-radius: 12px;
-    box-shadow: 0 0 6px #00ffff;
-  }
-  
-  .modal .close {
-    position: absolute;
-    top: 20px;
-    right: 35px;
-    color: #fff;
-    font-size: 40px;
-    font-weight: bold;
-    cursor: pointer;
-  }
+   
+/*................Close Button - Modern Circle Design........... */
+.close-outline-btn {
+  position: absolute;
+  top: 24px;
+  right: 32px;
+  width: 48px;
+  height: 48px;
+  border: 2px solid rgba(0, 255, 255, 0.3); /* Cyan border */
+  border-radius: 12px;
+  background: rgba(0, 255, 255, 0.06); /* Glass tint */
+  color: #00ffff;
+  font-size: 26px;
+  font-weight: bold;
+  cursor: pointer;
+  z-index: 10001;
+  backdrop-filter: blur(8px);
+  box-shadow: 0 0 10px rgba(0, 255, 255, 0.3);
+  transition: all 0.3s ease;
+  text-shadow: 0 0 6px rgba(0, 255, 255, 0.7);
+}
+
+.close-outline-btn:hover {
+  background: rgba(0, 255, 255, 0.15);
+  color: #ff00ff;
+  border-color: rgba(255, 0, 255, 0.5);
+  box-shadow: 0 0 20px rgba(255, 0, 255, 0.5), 0 0 40px rgba(255, 0, 255, 0.2);
+  /* text-shadow: 0 0 12px rgba(255, 0, 255, 0.7); */
+  /* transform: scale(1.15) rotate(2deg); */
+}
+
+
  
-  
+ /* .............CONTACT FORM................*/
   .contact-form {
     max-width: 600px;
     margin: 2rem auto;
@@ -397,7 +479,7 @@
     margin-top: 1rem;
   }
 
-
+/* ...................FOLLOW UP.................. */
   .follow-up {
     text-align: center;
     margin-top: 2rem;
@@ -430,7 +512,7 @@
   .follow-icons a:hover {
     color: #00cccc;
   }
-
+/* ...............TOAST............ */
   .toast {
     position: fixed;
     bottom: 30px;
@@ -450,6 +532,43 @@
     color: #fff;
   }
   
+  /* ...............BLOG................. */
+  .blog-grid {
+    display: grid;
+    gap: 2rem;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    margin-top: 1.5rem;
+  }
+  
+  .blog-card img {
+    width: 100%;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 10px;
+  }
+  
+  .blog-card h3 {
+    margin-top: 1rem;
+    font-size: 1.2rem;
+  }
+  
+  .blog-card p {
+    font-size: 0.95rem;
+    margin: 0.5rem 0;
+    color: #ccc;
+  }
+  
+  .blog-card a {
+    color: #ff8c42;
+    font-weight: bold;
+    text-decoration: none;
+  }
+  
+  .blog-card a:hover {
+    text-decoration: underline;
+  }
+
+  /* .............Responsiveness........... */
   @keyframes fadeInOut {
     0% { opacity: 0; transform: translateX(-50%) translateY(20px); }
     10% { opacity: 1; transform: translateX(-50%) translateY(0); }
