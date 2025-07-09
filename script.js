@@ -1,3 +1,42 @@
+function setupInfiniteSlider(trackId) {
+  const track = document.getElementById(trackId);
+  const cards = track.querySelectorAll(".quote-card");
+  let index = 0;
+
+  // Clone cards for infinite effect
+  cards.forEach(card => {
+    const clone = card.cloneNode(true);
+    track.appendChild(clone);
+  });
+
+  function slide() {
+    const cardWidth = cards[0].offsetWidth + 24;
+    index++;
+    track.style.transform = `translateX(-${index * cardWidth}px)`;
+
+    if (index >= cards.length) {
+      setTimeout(() => {
+        track.style.transition = 'none';
+        track.style.transform = 'translateX(0)';
+        index = 0;
+      }, 500);
+      setTimeout(() => {
+        track.style.transition = 'transform 0.6s ease-in-out';
+      }, 600);
+    }
+  }
+
+  setInterval(slide, 5000);
+}
+
+// Initialize both sliders
+setupInfiniteSlider("quoteTrack");
+setupInfiniteSlider("quoteTrack2");
+setupInfiniteSlider("quoteTrack3");
+
+
+
+
 function scrollToSection(id) {
     const section = document.getElementById(id);
     if (section) {
