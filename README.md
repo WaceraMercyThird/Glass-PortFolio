@@ -29,7 +29,7 @@ A futuristic **Elegant translucent interface portfolio website** showcasing my p
 
 ## 📄 Live Preview
 
-🔗 [Visit Live Portfolio](https://your-portfolio-link.com)
+🔗 [Visit Live Portfolio](https://mercy-wacera-portfolio.netlify.app/)
 
 ---
 
