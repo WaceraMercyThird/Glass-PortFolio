@@ -1,7 +1,5 @@
 # 💼Portfolio
 
-![Hero Banner](./assets/portfolio-screenshot-hero.png)
-
 A futuristic **Elegant translucent interface portfolio website** showcasing my projects, skills, badges, certifications, and professional journey as a Software Developer with interests in learning Cybersecurity and AI.
 
 ---
