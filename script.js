@@ -1,3 +1,4 @@
+// SLIDES
 function setupInfiniteSlider(trackId) {
   const track = document.getElementById(trackId);
   const cards = track.querySelectorAll(".quote-card");
@@ -37,6 +38,9 @@ setupInfiniteSlider("quoteTrack3");
 
 
 
+
+
+// ------------CV PDF File----------
 function scrollToSection(id) {
     const section = document.getElementById(id);
     if (section) {
@@ -66,9 +70,7 @@ function scrollToSection(id) {
   }
   
 
-  const PortfolioApp = {
-    // Existing methods...
-  
+  const PortfolioApp = {  
     showToast(id) {
       const toast = document.getElementById(id);
       if (toast) {
@@ -90,10 +92,13 @@ function scrollToSection(id) {
     if (name === "" || email === "" || message === "") {
       PortfolioApp.showToast("toast-error");
     } else {
-      // clear the form
       form.reset();
       PortfolioApp.showToast("toast");
     }
   });
+
+  // ------------------
+
+
   
   

@@ -1,0 +1,378 @@
+/* ------------------------------
+Variables
+------------------------------ */
+/* ------------------------------
+Mixins
+------------------------------ */
+/* ------------------------------
+Global Styles
+------------------------------ */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  color: #fff;
+  background: url("assets/pexels-jmark-250591.jpg") no-repeat center center fixed;
+  background-size: cover;
+  position: relative;
+}
+body::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  margin-bottom: 0.5rem;
+}
+
+a {
+  color: #00ffff;
+  text-decoration: none;
+  transition: 0.3s;
+}
+a:hover {
+  color: #ff6ec7;
+}
+
+/* ------------------------------
+Header / Hero Section
+------------------------------ */
+.hero {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  text-align: center;
+  z-index: 1;
+  color: #fff;
+}
+.hero .intro {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  max-width: 500px;
+}
+.hero .intro .profile-pic {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 1rem;
+  border: 2px solid #00ffff;
+}
+.hero .intro h1 {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+}
+.hero .intro h1 .highlight {
+  background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.9), #00ffff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.hero .intro p {
+  font-size: 1rem;
+  margin-bottom: 1rem;
+}
+.hero .intro p .role {
+  font-weight: 600;
+}
+.hero .intro button {
+  margin: 0.3rem;
+  padding: 0.6rem 1.2rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: #00ffff;
+  color: #000;
+  cursor: pointer;
+  font-weight: bold;
+  transition: 0.3s;
+}
+.hero .intro button:hover {
+  background: #ff6ec7;
+  color: #fff;
+}
+
+/* ------------------------------
+Glass Sections
+------------------------------ */
+.glass-section {
+  position: relative;
+  z-index: 1;
+  padding: 4rem 2rem;
+}
+.glass-section h2 {
+  text-align: center;
+  margin-bottom: 2rem;
+  font-size: 2rem;
+  background: linear-gradient(#00ffff, #ff6ec7);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+.glass-section.about-centered .about-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  max-width: 900px;
+  margin: 0 auto;
+  line-height: 1.6;
+}
+.glass-section.about-centered .about-card .highlight-box {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  margin: 1rem 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+/* ------------------------------
+Skills Grid
+------------------------------ */
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(120px, 1fr));
+  gap: 1rem;
+}
+.skills-grid .skill-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+}
+.skills-grid .skill-card img {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 0.5rem;
+}
+
+/* ------------------------------
+Certificates / Badges / Blogs
+------------------------------ */
+.certificate-grid,
+.badge-grid,
+.blog-grid {
+  display: flex;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  flex-wrap: wrap;
+  gap: 1.5rem;
+  justify-content: center;
+  margin-top: 2rem;
+}
+.certificate-grid .glass-card,
+.badge-grid .glass-card,
+.blog-grid .glass-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+.certificate-grid .glass-card img,
+.badge-grid .glass-card img,
+.blog-grid .glass-card img {
+  width: 100%;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.certificate-grid .glass-card img:hover,
+.badge-grid .glass-card img:hover,
+.blog-grid .glass-card img:hover {
+  transform: scale(1.05);
+}
+.certificate-grid .glass-card h4, .certificate-grid .glass-card h3,
+.badge-grid .glass-card h4,
+.badge-grid .glass-card h3,
+.blog-grid .glass-card h4,
+.blog-grid .glass-card h3 {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.certificate-grid .glass-card p,
+.badge-grid .glass-card p,
+.blog-grid .glass-card p {
+  font-size: 0.9rem;
+}
+
+/* ------------------------------
+Services Section
+------------------------------ */
+.project-category-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.5rem;
+}
+.project-category-grid .category-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  text-align: center;
+}
+.project-category-grid .category-card i {
+  font-size: 2rem;
+  margin-bottom: 0.5rem;
+  color: #00ffff;
+}
+.project-category-grid .category-card h3 {
+  margin-bottom: 0.5rem;
+}
+.project-category-grid .category-card a {
+  display: inline-block;
+  margin-top: 0.5rem;
+  font-weight: bold;
+}
+.project-category-grid .category-card a:hover {
+  color: #ff6ec7;
+}
+
+/* ------------------------------
+Quote Slider
+------------------------------ */
+.horizontal-quote-slider {
+  overflow-x: auto;
+  display: flex;
+}
+.horizontal-quote-slider .quote-track {
+  display: flex;
+  gap: 1rem;
+}
+.horizontal-quote-slider .quote-track .quote-card {
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  min-width: 250px;
+  flex: 0 0 auto;
+}
+.horizontal-quote-slider .quote-track .quote-card p {
+  font-style: italic;
+}
+.horizontal-quote-slider .quote-track .quote-card cite {
+  display: block;
+  margin-top: 0.5rem;
+  font-size: 0.8rem;
+  color: #00ffff;
+}
+
+/* ------------------------------
+Contact Form
+------------------------------ */
+.form-card {
+  max-width: 500px;
+  margin: 0 auto;
+  background: rgba(255, 255, 255, 0.1);
+  border-radius: 1rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  backdrop-filter: blur(10px);
+  padding: 1rem;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+}
+.form-card form {
+  display: flex;
+  flex-direction: column;
+}
+.form-card form .form-group {
+  margin-bottom: 1rem;
+}
+.form-card form .form-group label {
+  margin-bottom: 0.3rem;
+  display: block;
+}
+.form-card form .form-group input, .form-card form .form-group textarea {
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 0.5rem;
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  background: rgba(255, 255, 255, 0.1);
+  color: #fff;
+}
+.form-card form button {
+  padding: 0.7rem;
+  border: none;
+  border-radius: 0.5rem;
+  background: #00ffff;
+  color: #000;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
+.form-card form button:hover {
+  background: #ff6ec7;
+  color: #fff;
+}
+
+/* ------------------------------
+Modals
+------------------------------ */
+.modal {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  padding-top: 60px;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+.modal .modal-content {
+  display: block;
+  margin: auto;
+  max-width: 80%;
+  max-height: 80%;
+}
+.modal .close-outline-btn {
+  position: absolute;
+  top: 20px;
+  right: 35px;
+  color: #fff;
+  font-size: 40px;
+  font-weight: bold;
+  border: none;
+  background: transparent;
+  cursor: pointer;
+}
+
+/* ------------------------------
+Responsive
+------------------------------ */
+@media (max-width: 768px) {
+  .hero .intro {
+    max-width: 90%;
+    padding: 1rem;
+  }
+}
+
+/*# sourceMappingURL=styles.css.map */
